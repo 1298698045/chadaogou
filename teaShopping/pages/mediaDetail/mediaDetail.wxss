@@ -1,0 +1,45 @@
+.container{
+  width:100%;
+  height: auto;
+  background: #fff;
+}
+.container .wrap{
+  width: 100%;
+  overflow: hidden;
+}
+.container .wrap .imgs{
+  width: 100%;
+  height: 500rpx;
+  padding: 150rpx 0;
+}
+.container .wrap .imgs image{
+  width: 100%;
+  height: 100%;
+}
+.container .wrap .txtWrap{
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 220rpx;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+}
+.container .wrap .txtWrap image{
+    width:100rpx;
+    height: 100rpx;
+}
+.container .wrap .txtWrap .size{
+  font-size:24rpx;
+  margin:18rpx 0 0 30rpx;
+}
+.container .btn{
+  width: 100%;
+  padding: 25rpx;
+  background: #7bc267;
+  font-size: 28rpx;
+  text-align: center;
+  color:#fff;
+  position: fixed;
+  bottom:0;
+  left:0;
+}

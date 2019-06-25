@@ -1,0 +1,9 @@
+<view class='container'>
+   <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" style='width:100%;height:603rpx;'>
+    <block>
+      <swiper-item>
+        <image src="../../images/u40.png" class="slide-image" mode="aspectFit" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

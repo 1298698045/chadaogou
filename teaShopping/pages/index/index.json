@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "茶导购",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "nav-bar": "../../components/navbar/navbar"
+  }
+}

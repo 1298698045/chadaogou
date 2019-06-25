@@ -1,0 +1,364 @@
+<view class="container">
+  <!--头部切换navbar  -->
+  <view class="navbar">
+    <scroll-view class='navBarWrap' scroll-x="true" style="height: 83rpx;">
+      <view class="navbar-item" wx:for="{{navbar}}" wx:key="{{idx}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+        <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}">{{item}}</text>
+      </view>
+    </scroll-view>
+    <view class='back' catchtap="goBack">
+      <text class="iconfont icon-sousuo"></text>
+    </view>
+    <view class="inp" wx:if="{{inpisShow}}">
+      <input></input>
+    </view>
+  </view>
+  <view class="homeWrap" wx:if="{{homeHidden}}">
+    <view class='banner' wx:if="{{bannerHidden}}">
+      <image src='http://www.chajiujiu.com/static/img/banner.93ae227.png'></image>
+    </view>
+
+    <!--  推荐商品 -->
+    <view class="classWrap" wx:if="{{bannerHidden}}">
+      <view class="navtitle">
+        <view class="l">推荐商品</view>
+        <view class="r">查看全部</view>
+      </view>
+      <view class="listWrap">
+        <view class="conBoxWrap">
+          <view class="conBox" wx:for="{{classList}}" wx:key="{{idx}}" catchtap="goConbox">
+            <view class="imgs">
+              <image src="{{item.img}}" mode='scaleToFill'></image>
+            </view>
+            <view class="txt">
+              {{item.title}}
+            </view>
+            <view class="price">
+              ￥{{item.price}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 热门茶产区  -->
+    <view class="hotChaWrap" wx:if="{{bannerHidden}}">
+      <view class="navtitle">
+        <view class="l">热门茶产区</view>
+        <view class="r">查看全部</view>
+      </view>
+      <view class="hotList">
+        <view class="hotbox" wx:for="{{hotCha}}" wx:key="{{idx}}">
+          <view class="imgs">
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class="txt">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 热门区域品牌  -->
+    <view class="hotChaWrap" wx:if="{{bannerHidden}}">
+      <view class="navtitle">
+        <view class="l">热门区域品牌</view>
+        <view class="r">查看全部</view>
+      </view>
+      <view class="hotList">
+        <view class="hotbox" wx:for="{{hotCha}}" wx:key="{{idx}}">
+          <view class="imgs">
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class="txt">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 热门茶品牌  -->
+    <view class="hotChaWrap" wx:if="{{bannerHidden}}">
+      <view class="navtitle">
+        <view class="l">热门茶品牌</view>
+        <view class="r">查看全部</view>
+      </view>
+      <view class="hotList">
+        <view class="hotbox" wx:for="{{hotCha}}" wx:key="{{idx}}">
+          <view class="imgs">
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class="txt">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!--推荐茶企业  -->
+    <view class="hotChaWrap" wx:if="{{bannerHidden}}">
+      <view class="navtitle">
+        <view class="l">推荐茶企业</view>
+        <view class="r">查看全部</view>
+      </view>
+      <view class="hotList">
+        <view class="hotbox" wx:for="{{hotCha}}" wx:key="{{idx}}">
+          <view class="imgs">
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class="txt">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!--推荐店铺  -->
+    <view class="hotChaWrap" wx:if="{{bannerHidden}}">
+      <view class="navtitle">
+        <view class="l">推荐店铺</view>
+        <view class="r">查看全部</view>
+      </view>
+      <view class="hotList">
+        <view class="hotbox" wx:for="{{hotCha}}" wx:key="{{idx}}">
+          <view class="imgs">
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class="txt">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!--热门茶媒体  -->
+    <view class="hotChaWrap" wx:if="{{bannerHidden}}">
+      <view class="navtitle">
+        <view class="l">热门茶媒体</view>
+        <view class="r">查看全部</view>
+      </view>
+      <view class="hotList">
+        <view class="hotbox" wx:for="{{hotCha}}" wx:key="{{idx}}">
+          <view class="imgs">
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class="txt">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!--商品  -->
+  <view class="shoppingWrap" wx:if="{{aggregateHidden}}">
+    <view class="flexd">
+      <view class='sw'>
+        <view class="item" wx:for="{{sw}}" wx:for-index="idx" wx:key="{{idx}}" data-idx='{{idx}}' catchtap='filterFn'>
+          <view class="black {{swCurIdx==idx?'reds':''}}">{{item.name}}</view>
+          <text wx:if="{{idx==1}}" class="{{item.sort=='desc'?'icons':'icon3'}}"></text>
+        </view>
+      </view>
+      <view class='navcont' wx:if="{{swCurIdx==2&&sw[2].isClass}}">
+        <view class='lefts'>
+          <view class="lists {{idx == tagsLIndex?'color':''}}" wx:for="{{types}}" wx:for-index="idx" wx:key="{{idx}}" data-idx='{{idx}}' catchtap='classify'>{{item.name}}</view>
+        </view>
+        <view class='rights'>
+          <view class="lists {{idx==tagsRIndex?'color':''}}" wx:for="{{types[tagsLIndex].son}}" wx:for-index="idx" wx:key="{{idx}}" data-idx="{{idx}}" catchtap='classifySon'>{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='plist'>
+      <view class='items' wx:for="{{list}}" wx:key="index" wx:for-index="idx" wx:key="{{idx}}" data-idx='{{idx}}' catchtap='goProduct'>
+        <view class='cBox'>
+          <view class='box'>
+            <image src="{{item.images[0].url}}" mode="scaleToFill"></image>
+          </view>
+          <view class='ti'>{{item.title}}</view>
+          <view class='b'>
+            <view class='l icon2'>￥ {{item.price}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--茶产区  -->
+  <view class="teaProducing" wx:if="{{teaProducingHidden}}">
+    <view class='filterWrap'>
+      <view class='filter' catchtap='clissTab'>
+        <text>类型</text>
+      </view>
+      <view class="filterCen" wx:if="{{filterCenHidden}}" wx:for="{{typeList}}" wx:key="index" data-idx="{{idx}}" wx:for-index="idx" catchtap='typeFn'>
+        <view class="text {{typeIdx==idx?'active':''}}">{{item}}</view>
+      </view>
+    </view>
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">产区名称</view>
+          <view class="span">主要产出：红茶、绿茶、黑茶</view>
+          <view class="span">代表企业：{{item.con}}家</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!--区域品牌  -->
+  <view class="regionalBrand" wx:if="{{regionalBrandHidden}}">
+    <view class="navtitle">
+      <view class="classWrap" wx:for="{{lists}}" wx:key="{{index}}" data-idx="{{idx}}" wx:for-index="idx" catchtap="goClass">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <view class="fixedWrap" wx:if="{{regionShow}}">
+      <view class="l">
+        <view class="text"  wx:for="{{typeList}}" wx:key="index" data-idx="{{idx}}" wx:for-index="idx" catchtap='regionTab'>
+          <text class="size {{currenRegion==idx?'active':''}}">{{item}}</text>
+        </view>
+      </view>
+      <view class="r"></view>
+    </view>
+    <view class="regionWrap">
+      <view class="teowrap" wx:for="{{teoList}}" wx:key="{{index}}">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">产区名称</view>
+          <view class="span">主要产出：红茶、绿茶、黑茶</view>
+          <view class="span">代表企业：{{item.con}}家</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+  <!--茶品牌  -->
+  <view class="teaBrand" wx:if="{{teaBrandHidden}}">
+    <view class='filterWrap'>
+      <view class='filter' catchtap='teaBrandTab'>
+        <text>类型</text>
+      </view>
+      <view class="filterCen" wx:if="{{filterHidden}}" wx:for="{{typeList}}" wx:key="index" data-idx="{{idx}}" wx:for-index="idx" catchtap="teaTypeFn">
+        <view class="text {{teaTypeIdx==idx?'active':''}}">{{item}}</view>
+      </view>
+    </view>
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">产区名称</view>
+          <view class="span">主要产出：红茶、绿茶、黑茶</view>
+          <view class="span">代表企业：{{item.con}}家</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+
+  <!--茶企业  -->
+  <view class="teaCompany" wx:if="{{teaCompanyHidden}}">
+    <view class='filterWrap'>
+      <view class='filter' catchtap='CompanyFn'>
+        <text>类型</text>
+      </view>
+      <view class="filterCen" wx:if="{{filterShow}}" wx:for="{{typeList}}" wx:key="index" data-idx="{{idx}}" wx:for-index="idx" catchtap="teaCompanyFn">
+        <view class="text {{teaCompanyIdx==idx?'active':''}}">{{item}}</view>
+      </view>
+    </view>
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">不二茶叶</view>
+          <view class="span">主要产品：茉莉龙豪、绿茶</view>
+          <view class="span">拥有茶品牌：40种</view>
+          <view class="span">相关商品：{{item.con}}种</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 店铺  -->
+  <view class="Shop" wx:if="{{shopping}}">
+    <view class="navtitle">
+      <view class="bar" wx:for="{{shopbar}}" wx:key="index" data-idx="{{idx}}" wx:for-index="idx" catchtap="catShop">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <view class="fixedWrap" wx:if="{{fixedHidden}}">
+      <view class="left">
+        <view class="lists" wx:for="{{sublist}}" wx:key="{{index}}" data-idx="{{idx}}" wx:for-index="idx" catchtap="subFn">
+          <text class="list-text {{current==idx ? 'active' : ''}}">{{item}}</text>
+        </view>
+      </view>
+      <view class="center">
+        <view class="lists" wx:for="{{citylist}}" wx:key="{{index}}" data-idx="{{idx}}" wx:for-index="idx" catchtap="cityTab">
+          <text class="list-text {{currentIdx==idx ? 'active' : ''}}">{{item}}</text>
+        </view>
+      </view>
+      <view class="right">
+         <view class="lists" wx:for="{{citylist}}" wx:key="{{index}}" data-idx="{{idx}}" wx:for-index="idx" catchtap="areaTab">
+           <text class="list-text {{areaIdx == idx ? 'active' : ''}}">{{item}}</text>
+         </view>
+      </view>
+    </view>
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}" catchtap="goShopping">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">不二茶叶</view>
+          <view class="span">北京市朝阳区阜通西大街合生麒麟新天地8号楼1层底商8-8X的现身狼人杀俱乐部</view>
+          <view class="span">所售商品：{{item.con}}种</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+  <!--去喝茶  -->
+  <view class="gotoTea" wx:if="{{gotoTeaHidden}}">
+    <view class="navtitle">
+      <view class="bar" wx:for="{{shopbar}}" wx:key="index" data-idx="{{idx}}" wx:for-index="idx" catchtap="catShop">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}" catchtap="drinkTeaFn">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">不二茶叶</view>
+          <view class="span">北京市朝阳区阜通西大街合生麒麟新天地8号楼1层底商8-8X的现身狼人杀俱乐部</view>
+          <view class="span">人均消费：￥{{item.con}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!--茶媒体  -->
+  <view class="teaMedia" wx:if="{{teaMediaHidden}}">
+    <view class='filterWrap'>
+      <view class='filter' catchtap='teaMediaFn'>
+        <text>类型</text>
+      </view>
+      <view class="filterCen" wx:if="{{teaMediaShow}}" wx:for="{{typeList}}" wx:key="index" data-idx="{{idx}}" wx:for-index="idx" catchtap="teaMediaTab">
+        <view class="text {{currenMedia==idx?'active':''}}">{{item}}</view>
+      </view>
+    </view>
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}" catchtap="goMedia">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">佛山吃货圈</view>
+          <view class="span">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</view>
+          <view class="span">类型：一级类型 二级类型</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

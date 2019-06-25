@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="wrap">
+    <view class="imgs">
+      <image src="{{imgCode}}" mode="aspectFit"></image>
+    </view>
+    <view class="txtWrap">
+      <image src="./../../images/u292.png" mode="aspectFit"></image>
+      <view class="size">保存图片后，打开微信，使用「扫一扫」，识别上方小程序码，进入小程序</view>
+    </view>
+  </view>
+  <view class="btn" catchtap="saveImg">保存图片</view>
+</view>

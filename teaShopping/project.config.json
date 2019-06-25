@@ -1,0 +1,77 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wxfdfb68ef448ed2dc",
+	"projectname": "chadaogou_v1.2",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "详情页",
+					"pathName": "pages/detail/detail",
+					"query": "pages/detail/detail"
+				},
+				{
+					"id": -1,
+					"name": "购买页",
+					"pathName": "pages/purchase/purchase",
+					"query": "pages/purchase/purchase"
+				},
+				{
+					"id": -1,
+					"name": "茶产区详情",
+					"pathName": "pages/teaProducingDetail/teaProducingDetail",
+					"query": "pages/teaProducingDetail/teaProducingDetail"
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/shopDetail/shopDetail",
+					"query": "pages/shopDetail/shopDetail"
+				},
+				{
+					"id": -1,
+					"name": "喝茶店铺详情",
+					"pathName": "pages/drinkteaDetail/drinkteaDetail",
+					"query": "pages/drinkteaDetail/drinkteaDetail"
+				},
+				{
+					"id": 5,
+					"name": "茶媒体详情",
+					"pathName": "pages/mediaDetail/mediaDetail",
+					"query": "pages/mediaDetail/mediaDetail"
+				}
+			]
+		}
+	}
+}

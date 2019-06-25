@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="content">
+    <view class='imgwrap'>
+      <image src='{{imgcode}}' mode='aspectFit'></image>
+    </view>
+    <view class='logos'>
+      <image src='./../../images/u292.png' mode='aspectFit'></image>
+      <view class="sizes">保存图片，打开微信，识别图片中的二维码，立即购买</view>
+    </view>
+  </view>
+  <view class="btn" bindtap='saveImg'>保存图片</view>
+</view>

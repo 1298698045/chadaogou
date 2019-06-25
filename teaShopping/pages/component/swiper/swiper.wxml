@@ -1,0 +1,14 @@
+<template name="swiperTpl">
+  <view class="section swiper">
+    <swiper vertical="{{swiperData.vertical}}" autoplay="{{swiperData.autoplay}}" interval="{{swiperData.interval}}" circular="{{swiperData.circular}}" duration="{{swiperData.duration}}" style="height:{{swiperData.imageHeight}}px" bindchange="swiperChange">
+      <swiper-item wx:for="{{swiperData.imgs}}" wx:for-index="idx" wx:key="{{idx}}" data-idx="{{idx}}" wx:for-item="item" catchtap="swgo">
+        <view>
+          <image src="./../../u2.png" mode="aspectFit"></image>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class="dots">
+      <view wx:for="{{swiperData.imgs}}" wx:for-item="item" wx:for-index="idx" wx:key="idx" class="{{idx==swiperData.swiperCurrent?'active':''}}"></view>
+    </view>
+  </view>
+</template>

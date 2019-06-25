@@ -1,0 +1,1152 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAK0AA0AAAAABowAAAJhAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GVgCCQhEICnyBEgsKAAE2AiQDEAQgBYUIBzEbrgXInoNNWZ4V2zVP/GV1ioqT5xbx/P/v97+5ztlfDddGfg2reIIqlghZE2RolhKVyvgZ8UT06xPj3vfJUqQqZQEDGXdru6UA6Ojc/aKEDmiFo5F+xaoAdeVQP3VTfxTh5HebmHDYRdueAn6gKPBo2qIs7DztsggD8kCowXmDj7b0RCRrFQJvX4rowPozQcHem2AWG0ATXReFhpQ8MUZ71N7gMbg/PxwLnWass2NnrjpyGD8LaahPD9Mua+AYAujo2IYARkiCbch2gVLC5+VhAP96Nv9EgIwTQBoaACDQiTIMGigwiYZ9YASgANA2GAl8fAfe132vs/63N9baetB/sHY0E3hdD7zPBV8+1t7cb7Mmc+DiYmKTcm1hdX25t728uNnjb2+3nVmj3hO9RXdxURD+CH//T4+4pkZGpz2jk7fHutOnut+hSQ8AgvDq15d+kjdKZ5XmNi0d7vU/fQJgUgOhiXyGAv2PAACqAIViTFD2IYKGadMYACz7F8AaOQKISRcQ0Ey4g4Bu0gMBZdJzAWNmvBYwbtI7AdOOxgoCZqzkUJeawhFwrFhktZp5V6xuUR+WuW2N2eDcGrfowZp2yd8+40AaqBy3k6hTewWU8ZFl3GKmak4V0/vftB+i/6SXC+WD+zjgHEm7BNQOfjlTDa6uyEuk3cEWkYaSGtZH+hqlOio8XT2T9npu6bppvZ6Tggp2iwlyJtEkBcECtdyvOBJ3quFoPdodFLW9XmFFRe+R0mWN/HH3OeC602k1UFEppFysZS0msNylZaYzIzpiyKFJh2kWFBIinTZ+t9nv9ps=) format('woff2'),
+         url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAARsAA0AAAAABowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAEUAAAABoAAAAchNpJ1UdERUYAAAQwAAAAHgAAAB4AKQAKT1MvMgAAAaAAAABCAAAAVjyASARjbWFwAAAB9AAAAD4AAAFCAA/pvWdhc3AAAAQoAAAACAAAAAj//wADZ2x5ZgAAAkAAAAB8AAAAfAraVWpoZWFkAAABMAAAADAAAAA2ElVmy2hoZWEAAAFgAAAAHQAAACQH2QOFaG10eAAAAeQAAAAPAAAAEAwAAAVsb2NhAAACNAAAAAoAAAAKAD4AAG1heHAAAAGAAAAAHgAAACABEAAwbmFtZQAAArwAAAFJAAACiCnmEVVwb3N0AAAECAAAAB8AAAAx34h563jaY2BkYGAA4q0/H7HG89t8ZeBmYQCB67MF0+A06/9W5t/MtUAuBwMTSBQAQbALKXjaY2BkYGBu+N/AEMPCAALMvxkYGVABCwBZlwNnAAAAeNpjYGRgYGBhUGFgYgABEMkFhAwM/8F8BgAMaAFBAAB42mNgZGFgnMDAysDA1Ml0hoGBoR9CM75mMGLkAIoysDIzYAUBaa4pDA7PhJ4JMTf8b2CIYW5gaAAKM4LkAN2NC/8AAHjaY2GAABYIZgUAAIUAEgB42mNgYGBmgGAZBkYGELAB8hjBfBYGBSDNAoRA/jOh//8hpORHqEoGRjYGGJOBkQlIMDGgAkaGYQ8AUAcHsgAAAAAAAAAAAAAAPgAAAAIABf+FA/sDfQAVACMAAAUnNgInJiAHBhAXHgEzMjY3FxYyNjQnBiAnJhA3PgEyFhcWEAP0yH4Gho3+jJGHh0WqW1OhQsgHEg77gf6wgHt7PZmimz54VsiPAWiLiYmP/oyPREM9PMgHDBLfenqBAVJ/PTw8PX/+rgAAAHjafZA9TgMxEIWf8wckEkIgqF1RANr8lCkTKfQIpaNINt6QaNdeeZ1IOQEtFQeg5RgcgBsg0XIKXpZJkyJr7ejzm5nnsQGc4xsK/98l7oQVjvEoXMERMuEq9RfhGvlduI4WPoUb1H+Em7hVA+EWLtQbHVTthLub0m3LCmcYCFdwiifhKvWVcI38KlzHFT6EG9S/hJsY41e4hWtlqQzhYTBBYJxBY4oN4wIxHCySMgbWoTn0ZhLMTE83ehE7mzgbKO9XYpcDHmg554Ap7T23Zr5KJ/5gy4HUmG4eBUu2KY0uInQoG18snNXdqHOw/Z7ttrTYv2uBNcfsUQ1s1Pw92zPSSGwMr5CSNfIyt6QSU49oa6zxu2cp1vNeCIlOvMv0iMeaNHU6925p4sDi5/KMHH20uZI996gcPmNZCHm/3U7EIIpdhj+T2HEZAAAAeNpjYGKAAC4wyciADljAokyMTGzF+aXFpfkADEkCzAAAAAAB//8AAgABAAAADAAAABYAAAACAAEAAwADAAEABAAAAAIAAAAAeNpjYGBgZACCq0vUOUD09dmCaTAaADr9BXwAAA==) format('woff'),
+         url('iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before {
+  content: "\e612";
+}
+
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.container .navbar {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container .navbar .inp{
+  background: #fff;
+  position: absolute;
+  top:6rpx;
+  left:18rpx;
+  z-index: 999;
+  border: 1rpx solid #dddee3; 
+  border-radius: 10rpx;
+}
+.container .navbar .inp input{
+  width:630rpx;
+  height: 70rpx;
+}
+.navbar .navBarWrap {
+  width: 85%;
+  overflow: hidden;
+  display: flex;
+  float: left;
+  white-space: nowrap;
+}
+
+.navbar .back {
+  width: 15%;
+  float: right;
+  text-align: center;
+}
+
+.navbar .back .iconfont {
+  display: block;
+  margin-top: 20rpx;
+  color: #7bc267;
+}
+
+.navbar-item {
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+  color: #7bc267;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.navbar-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 20rpx 16rpx;
+  margin: auto;
+  /* float:left;  */
+}
+
+.navbar-text.active {
+  border-bottom: 4rpx solid #7bc267;
+  color: #7bc267;
+}
+
+.container .banner {
+  width: 100%;
+  height: 200rpx;
+  margin-top: 83rpx;
+}
+
+.container .banner image {
+  width: 100%;
+  height: 100%;
+}
+
+.shoppingWrap .flexd {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  border-top: 1rpx solid #dddee3;
+}
+
+.sw {
+  height: 50rpx;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1rpx solid #dddee3;
+  display: flex;
+  flex-direction: row;
+  padding: 26rpx 0;
+  margin-top: 1rpx;
+}
+
+.sw .item {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+.reds {
+  color: #7bc267 !important;
+}
+
+.sw .item .black {
+  color: #666;
+}
+
+.sw .item .icons {
+  height: 14rpx;
+  width: 20rpx;
+  display: inline-block;
+  margin-top: -28rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowQTBBNTQ4QzA0N0IxMUU3QTgzMEE0QzlFOTA1NEIzNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowQTBBNTQ4RDA0N0IxMUU3QTgzMEE0QzlFOTA1NEIzNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBBMEE1NDhBMDQ3QjExRTdBODMwQTRDOUU5MDU0QjM2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBBMEE1NDhCMDQ3QjExRTdBODMwQTRDOUU5MDU0QjM2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+we32JwAAANpJREFUeNpiTEtLm87AwOADxJ8ZyAf/gZgbiK+zAIloIOZloA6QZwISeQzUA5tABi4A4ilUMOwJEMcxQTkFQHyCAsP+gYJu5syZH2EG/gXicCB+T6aBWUDDDoEYTEiCj4A4jQzDNgINmwnjMKFJrgHiOhIMuwTEkcgCTFgUNQPxQSIM+wPEMUDHfSdkIAiEAvFjAgamA/FldEFcBr4G2Y7HMFDumodNggmPJlCslWMRPwfE2bg0MRHwVhcQr0Xif4O6/D8uDSxEBH4cEAsAsQYQx4MKAHyKAQIMABl5LHEXsN6FAAAAAElFTkSuQmCC) no-repeat center;
+  background-size: 20rpx auto;
+  margin-left: 95rpx;
+  vertical-align: top;
+  transition: all 0.2s ease-out;
+}
+
+.sw .item .icon3 {
+  height: 14rpx;
+  width: 20rpx;
+  display: inline-block;
+  margin-top: -28rpx;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowQTBBNTQ4QzA0N0IxMUU3QTgzMEE0QzlFOTA1NEIzNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowQTBBNTQ4RDA0N0IxMUU3QTgzMEE0QzlFOTA1NEIzNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBBMEE1NDhBMDQ3QjExRTdBODMwQTRDOUU5MDU0QjM2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBBMEE1NDhCMDQ3QjExRTdBODMwQTRDOUU5MDU0QjM2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+we32JwAAANpJREFUeNpiTEtLm87AwOADxJ8ZyAf/gZgbiK+zAIloIOZloA6QZwISeQzUA5tABi4A4ilUMOwJEMcxQTkFQHyCAsP+gYJu5syZH2EG/gXicCB+T6aBWUDDDoEYTEiCj4A4jQzDNgINmwnjMKFJrgHiOhIMuwTEkcgCTFgUNQPxQSIM+wPEMUDHfSdkIAiEAvFjAgamA/FldEFcBr4G2Y7HMFDumodNggmPJlCslWMRPwfE2bg0MRHwVhcQr0Xif4O6/D8uDSxEBH4cEAsAsQYQx4MKAHyKAQIMABl5LHEXsN6FAAAAAElFTkSuQmCC) no-repeat center;
+  background-size: 20rpx auto;
+  margin-left: 95rpx;
+  vertical-align: top;
+  transition: all 0.2s ease-out;
+  transform: rotate(180deg);
+}
+
+/*精品推荐  */
+
+.container .classWrap {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin: 20rpx 0;
+}
+
+.container .classWrap .navtitle {
+  width: 100%;
+  /* height: 100rpx; */
+  border-bottom: 1rpx solid #dddee3;
+  overflow: hidden;
+}
+
+.container .classWrap .navtitle .l {
+  padding: 30rpx 0;
+  float: left;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #7bc267;
+}
+
+.container .classWrap .navtitle .r {
+  padding: 30rpx 0;
+  float: right;
+  color: #dddee3;
+  font-size: 24rpx;
+}
+
+.container .listWrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.container .listWrap .conBoxWrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container .listWrap .conBoxWrap .conBox {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  border-bottom: 2rpx solid #dddee3;
+  border-right: 1rpx solid #dddee3;
+}
+
+.container .listWrap .conBoxWrap .conBox .imgs {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container .listWrap .conBoxWrap .conBox .imgs image {
+  width: 100%;
+  height: 360rpx;
+}
+
+.container .listWrap .conBoxWrap .conBox .txt {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 24rpx;
+  color: #a3a3a3;
+}
+
+.container .listWrap .conBoxWrap .conBox  .price {
+  text-align: center;
+  padding: 40rpx 0;
+  color: red;
+  font-size: 24rpx;
+}
+
+/*热门茶产区  */
+
+.container .hotChaWrap {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin: 20rpx 0;
+}
+
+.container .hotChaWrap .navtitle {
+  width: 100%;
+  border-bottom: 1rpx solid #dddee3;
+  overflow: hidden;
+}
+
+.container .hotChaWrap .navtitle .l {
+  padding: 30rpx 0;
+  float: left;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #7bc267;
+}
+
+.container .hotChaWrap .navtitle .r {
+  padding: 30rpx 0;
+  float: right;
+  color: #dddee3;
+  font-size: 24rpx;
+}
+
+.container .hotChaWrap .hotList {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.container .hotChaWrap .hotList .hotbox {
+  width: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  float: left;
+  border-bottom: 2rpx solid #dddee3;
+  border-right: 1rpx solid #dddee3;
+}
+
+.container .hotChaWrap .hotList .hotbox .imgs image {
+  width: 100%;
+  height: 360rpx;
+}
+
+.container .hotChaWrap .hotList .hotbox .txt {
+  font-size: 28rpx;
+  color: #a3a3a3;
+  padding: 20rpx 0;
+  text-align: center;
+}
+
+/*商品  */
+
+.shoppingWrap {
+  width: 100%;
+  height: auto;
+  margin-top: 200rpx;
+}
+
+.shoppingWrap .navcont {
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  font-size: 28rpx;
+}
+
+.shoppingWrap .navcont .lefts {
+  width: 32%;
+  height: auto;
+  border-right: 1rpx solid #dddee3;
+  background: #fff;
+}
+
+.shoppingWrap .navcont .rights {
+  width: 68%;
+  height: auto;
+  background: #fff;
+}
+
+.shoppingWrap .navcont .lists {
+  height: 72rpx;
+  color: #666;
+  text-align: center;
+  line-height: 72rpx;
+}
+
+.shoppingWrap .navcont .rights .lists {
+  width: 50%;
+  float: left;
+  height: 72rpx;
+  color: #666;
+  text-align: center;
+  line-height: 72rpx;
+}
+
+.shoppingWrap .plist {
+  height: auto;
+  overflow: hidden;
+  margin-top: 103rpx;
+}
+
+.shoppingWrap .plist .items {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+  /* height: 480rpx; */
+  box-sizing: border-box;
+  /* margin-top: 20rpx;  */
+}
+
+.shoppingWrap .plist .items:nth-child(odd) {
+  /* padding-right: 10rpx; */
+  box-sizing: border-box;
+  border-right: 1px solid #dddee3;
+}
+
+.shoppingWrap .plist .items:nth-child(even) {
+  /* padding-left: 10rpx; *//* box-sizing:border-box;
+  border-left:1px solid #dddee3;  */
+}
+
+.shoppingWrap .plist .items .cBox {
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dddee3;
+}
+
+.shoppingWrap .plist .items .cBox image {
+  width: 100%;
+  height: 360rpx;
+  vertical-align: top;
+}
+
+.shoppingWrap .plist .items .cBox .ti {
+  height: 70rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  /* line-height: 60rpx;  */
+  margin-top: 20rpx;
+  color: #333;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+}
+
+.shoppingWrap .plist .items .cBox .b {
+  height: 30rpx;
+  overflow: hidden;
+  margin-top: 20rpx;
+  padding: 25rpx;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  /* display: flex;
+  flex-direction: row;  */
+  text-align: center;
+}
+
+.shoppingWrap .plist .items .cBox .b .l {
+  height: 30rpx;
+  overflow: hidden;
+  display: inline-block;
+  /* flex: 1;  */
+}
+
+.shoppingWrap .plist .items .cBox .b .l.icon2 {
+  color: red;
+}
+
+.shoppingWrap .plist .items .cBox .b .r {
+  height: 30rpx;
+  color: #f00;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.shoppingWrap .plist .items .cBox .b .r2 {
+  height: 30rpx;
+  color: #999;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.color {
+  color: #7bc267 !important;
+}
+
+/*茶产区  */
+
+.container .teaProducing {
+  whidth: 100%;
+  height: auto;
+  margin-top: 200rpx;
+  overflow: hidden;
+  margin-bottom:30rpx;
+}
+
+.container .teaProducing .filterWrap {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  border-top: 1rpx solid #dddee3;
+}
+
+.teaProducing .filter {
+  height: 86rpx;
+  line-height: 86rpx;
+  /* padding:30rpx 0; */
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  width: 100%;
+}
+
+.teaProducing .filterCen {
+  width: 100%;
+  height: auto;
+  background: red;
+}
+
+.teaProducing .filterCen .text {
+  width: 100%;
+  font-size: 24rpx;
+  color: #333;
+  padding: 20rpx 0;
+  background: #fff;
+  text-align: center;
+  border-top: 1rpx solid #dddee3;
+}
+.teaProducing .filterCen .text.active{
+  color: #7bc267;
+}
+.teaProducing .teoList {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1rpx solid #dddee3;
+}
+
+.teaProducing .teoList .teowrap {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30rpx 0;
+}
+
+.teaProducing .teoList .teowrap .left {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.teaProducing .teoList .teowrap .left image {
+  width: 100%;
+  height: 300rpx;
+  vertical-align: middle;
+}
+
+.teaProducing .teoList .teowrap .right {
+  width: 60%;
+  float: left;
+}
+
+.teaProducing .teoList .teowrap .right .h3 {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+.teaProducing .teoList .teowrap .right .span {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+/*区域品牌  */
+
+.container regionalBrand {
+  width: 100%;
+  height: auto;
+}
+
+.container .regionalBrand .navtitle {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  display: flex;
+  border-top: 1rpx solid #dddee3;
+}
+
+.container .regionalBrand .navtitle .classWrap {
+  width: 100%;
+  flex: 1;
+}
+
+.container .regionalBrand .navtitle .classWrap text {
+  display: block;
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+}
+.container .regionalBrand .fixedWrap{
+  width:100%;
+  height:auto;
+  background:#fff;
+  border-top:1rpx solid #dddee3;
+  position:fixed;
+  top:178rpx;
+  left:0; 
+  overflow:hidden;
+  font-size:28rpx;
+}
+.container .regionalBrand .fixedWrap .l{
+  width: 30%;
+  /* height: 370rpx; */
+  float: left;
+  border-right: 1rpx solid #dddee3;
+  overflow: scroll;
+}
+.container .regionalBrand .fixedWrap .l .text{
+  height:72rpx;
+  text-align:center;
+  line-height:72rpx;
+}
+.container .regionalBrand .fixedWrap .l .text .size{
+  color: #333;
+}
+.container .regionalBrand .fixedWrap .l .text .size.active{
+  color: #7bc267;
+}
+.container .regionalBrand .fixedWrap .r{
+  width: 70%;
+  /* height: 370rpx; */
+  float: left; 
+}
+.container .regionWrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 200rpx;
+  margin-bottom: 30rpx;
+}
+
+.container .regionWrap .teowrap {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #dddee3;
+}
+
+.container .regionWrap .teowrap .left {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.container .regionWrap .teowrap .left image {
+  width: 100%;
+  height: 300rpx;
+  vertical-align: middle;
+}
+
+.container .regionWrap .teowrap .right {
+  width: 60%;
+  float: left;
+}
+
+.container .regionWrap .teowrap .right .h3 {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+.container .regionWrap .teowrap .right .span {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+/*  茶品牌  */
+
+.container .teaBrand {
+  whidth: 100%;
+  height: auto;
+  margin-top: 200rpx;
+  overflow: hidden;
+  margin-bottom:30rpx;
+}
+
+.container .teaBrand .filterWrap {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  border-top: 1rpx solid #dddee3;
+}
+
+.container .teaBrand .filter {
+  height: 86rpx;
+  line-height: 86rpx;
+  /* padding:30rpx 0; */
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  width: 100%;
+}
+
+.container .teaBrand .filterCen {
+  width: 100%;
+  height: auto;
+  background: red;
+}
+
+.container .teaBrand .filterCen .text {
+  width: 100%;
+  font-size: 24rpx;
+  color: #333;
+  padding: 20rpx 0;
+  background: #fff;
+  text-align: center;
+  border-top: 1rpx solid #dddee3;
+}
+.container .teaBrand .filterCen .text.active{
+  color: #7bc267;
+}
+.container .teaBrand .teoList {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1rpx solid #dddee3;
+}
+
+.container .teaBrand .teoList .teowrap {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30rpx 0;
+}
+
+.container .teaBrand .teoList .teowrap .left {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.container .teaBrand .teoList .teowrap .left image {
+  width: 100%;
+  height: 300rpx;
+  vertical-align: middle;
+}
+
+.container .teaBrand .teoList .teowrap .right {
+  width: 60%;
+  float: left;
+}
+
+.container .teaBrand .teoList .teowrap .right .h3 {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+.container .teaBrand .teoList .teowrap .right .span {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+/*茶企业  */
+
+.container .teaCompany {
+  whidth: 100%;
+  height: auto;
+  margin-top: 200rpx;
+  margin-bottom:30rpx;
+  overflow: hidden;
+}
+
+.container .teaCompany .filterWrap {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  border-top: 1rpx solid #dddee3;
+}
+
+.container .teaCompany .filter {
+  height: 86rpx;
+  line-height: 86rpx;
+  /* padding:30rpx 0; */
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  width: 100%;
+}
+
+.container .teaCompany .filterCen {
+  width: 100%;
+  height: auto;
+  background: red;
+}
+
+.container .teaCompany .filterCen .text {
+  width: 100%;
+  font-size: 24rpx;
+  color: #333;
+  padding: 20rpx 0;
+  background: #fff;
+  text-align: center;
+  border-top: 1rpx solid #dddee3;
+}
+.container .teaCompany .filterCen .text.active{
+  color: #7bc267;
+}
+.container .teaCompany .teoList {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1rpx solid #dddee3;
+}
+
+.container .teaCompany .teoList .teowrap {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30rpx 0;
+}
+
+.container .teaCompany .teoList .teowrap .left {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.container .teaCompany .teoList .teowrap .left image {
+  width: 100%;
+  height: 300rpx;
+  vertical-align: middle;
+}
+
+.container .teaCompany .teoList .teowrap .right {
+  width: 60%;
+  float: left;
+}
+
+.container .teaCompany .teoList .teowrap .right .h3 {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+.container .teaCompany .teoList .teowrap .right .span {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+/* 店铺  */
+
+.container .Shop {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 200rpx;
+  margin-bottom: 30rpx;
+}
+
+.container .Shop .navtitle {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  display: flex;
+  border-top: 1rpx solid #dddee3;
+}
+
+.container .Shop .navtitle .bar {
+  flex: 1;
+  width: 100%;
+  overflow:hidden;
+  background:#fff;
+  margin:20rpx 0;
+}
+
+.container .Shop .navtitle .bar text {
+  text-align: center;
+  flex: 1;
+  display:block;
+  font-size: 24rpx;
+  color: #333;
+  padding: 10rpx 0;
+}
+.container .fixedWrap{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-top: 1rpx solid #dddee3;
+  position: fixed;
+  top:178rpx;
+  left:0;
+  display: flex;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+.container .fixedWrap .left{
+  flex: 1;
+  width: 100%;
+  height: 370rpx;
+  border-right: 1rpx solid #dddee3;
+  overflow: scroll;
+}
+.container .fixedWrap .left::-webkit-scrollbar{
+  display: none;
+}
+.container .fixedWrap .left .lists{
+  height:72rpx;
+  text-align:center;
+  line-height:72rpx;
+}
+.container .fixedWrap .left .lists .list-text{
+  color: #666;
+}
+.container .fixedWrap .left .lists .list-text.active{
+  color:#7bc267;
+}
+.container .fixedWrap .center{
+  flex: 1;
+  width: 100%;
+  height: 370rpx;
+  border-right: 1rpx solid #dddee3;
+  overflow: scroll;
+}
+.container .fixedWrap .center::-webkit-scrollbar{
+  display: none;
+}
+.container .fixedWrap .center .lists{
+  height:72rpx;
+  color:#666;
+  text-align:center;
+  line-height:72rpx;
+}
+.container .fixedWrap .right::-webkit-scrollbar{
+  display: none;
+}
+.container .fixedWrap .center .lists .list-text{
+  color:#666;
+}
+.container .fixedWrap .center .lists .list-text.active{
+  color:#7bc267;
+}
+.container .fixedWrap .right{
+  flex: 1;
+  width: 100%;
+  height: 370rpx;
+  overflow: scroll;
+}
+.container .fixedWrap .right .lists .list-text{
+  color:#666;
+}
+.container .fixedWrap .right .lists .list-text.active{
+  color:#7bc267;
+}
+.container .fixedWrap .right .lists{
+  height:72rpx;
+  color:#666;
+  text-align:center;
+  line-height:72rpx;
+}
+.container .Shop .teoList {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1rpx solid #dddee3;
+}
+
+.container .Shop .teoList .teowrap {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30rpx 0;
+}
+
+.container .Shop .teoList .teowrap .left {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.container .Shop .teoList .teowrap .left image {
+  width: 100%;
+  height: 300rpx;
+  vertical-align: middle;
+}
+
+.container .Shop .teoList .teowrap .right {
+  width: 60%;
+  float: left;
+}
+
+.container .Shop .teoList .teowrap .right .h3 {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+.container .Shop .teoList .teowrap .right .span {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+
+
+
+/* 去喝茶  */
+.container .gotoTea{
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 200rpx;
+  margin-bottom:30rpx;
+}
+.container .gotoTea .navtitle {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  display: flex;
+  border-top: 1rpx solid #dddee3;
+}
+
+.container .gotoTea .navtitle .bar {
+  flex: 1;
+  width: 100%;
+  overflow:hidden;
+  background:#fff;
+  margin:20rpx 0;
+}
+
+.container .gotoTea .navtitle .bar text {
+  text-align: center;
+  flex: 1;
+  display:block;
+  font-size: 24rpx;
+  color: #333;
+  padding: 10rpx 0;
+}
+.container .gotoTea .teoList {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1rpx solid #dddee3;
+}
+
+.container .gotoTea .teoList .teowrap {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30rpx 0;
+}
+
+.container .gotoTea .teoList .teowrap .left {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.container .gotoTea .teoList .teowrap .left image {
+  width: 100%;
+  height: 300rpx;
+  vertical-align: middle;
+}
+
+.container .gotoTea .teoList .teowrap .right {
+  width: 60%;
+  float: left;
+}
+
+.container .gotoTea .teoList .teowrap .right .h3 {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+.container .gotoTea .teoList .teowrap .right .span {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+
+
+/* 茶媒体  */
+.container .teaMedia{
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 200rpx;
+  margin-bottom:30rpx;
+}
+.container .teaMedia .filterWrap {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 83rpx;
+  left: 0;
+  border-top: 1rpx solid #dddee3;
+}
+
+.container .teaMedia .filter {
+  height: 86rpx;
+  line-height: 86rpx;
+  /* padding:30rpx 0; */
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  width: 100%;
+}
+
+.container .teaMedia .filterCen {
+  width: 100%;
+  height: auto;
+  background: red;
+}
+
+.container .teaMedia .filterCen .text {
+  width: 100%;
+  font-size: 24rpx;
+  color: #333;
+  padding: 20rpx 0;
+  background: #fff;
+  text-align: center;
+  border-top: 1rpx solid #dddee3;
+}
+.container .teaMedia .filterCen .text.active{
+  color:#7bc267;
+}
+.container .teaMedia .teoList {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1rpx solid #dddee3;
+}
+
+.container .teaMedia .teoList .teowrap {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30rpx 0;
+}
+
+.container .teaMedia .teoList .teowrap .left {
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+
+.container .teaMedia .teoList .teowrap .left image {
+  width: 100%;
+  height: 300rpx;
+  vertical-align: middle;
+}
+
+.container .teaMedia .teoList .teowrap .right {
+  width: 60%;
+  float: left;
+}
+
+.container .teaMedia .teoList .teowrap .right .h3 {
+  font-size: 30rpx;
+  padding: 30rpx 0;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+.container .teaMedia .teoList .teowrap .right .span {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}

@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/purchase/purchase",
+    "pages/teaProducing/teaProducing",
+    "pages/teaProducingDetail/teaProducingDetail",
+    "pages/shopDetail/shopDetail",
+    "pages/drinkteaDetail/drinkteaDetail",
+    "pages/mediaDetail/mediaDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#7BC267",
+    "navigationBarTitleText": "茶导购",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  }
+}

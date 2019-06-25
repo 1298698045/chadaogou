@@ -1,0 +1,35 @@
+<view class='container'>
+  <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" style='width:100%;height:603rpx;'>
+    <block wx:for="{{list.images}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFit" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='dwrap'>
+    <view class='title'>
+      <view class='txt'>{{list.title}}</view>
+    </view>
+    <view class='price'>
+      <text class='jia'>售价</text>
+      <view class='prs'>￥ {{list.price}}</view>
+    </view>
+  </view>
+  <!-- <canvas canvas-id="saveImg" style="width:545px;height:771px;"></canvas> -->
+  <view class='dBox'>
+    <view class='t'>
+      <view wx:for="{{swTitle}}" wx:for-index="idx" wx:key="{{idx}}" class="item {{idx==swIndex?'on':''}}" catchtap='swFn' data-idx='{{idx}}'>{{item}}</view>
+    </view>
+    <view class='txin' wx:if="{{swIndex == 0}}">
+      <rich-text class="rich" nodes="{{list.details}}"></rich-text>
+      <image src='{{item}}' wx:for="{{list.imageDetails}}" wx:key="{{idx}}" style='height:0px;width:100%;' mode='widthFix'></image>
+    </view>
+    <view class="navcont" wx:if="{{swIndex==1}}">
+      <view class="mido" wx:for="{{list.param}}" wx:key="{{idx}}">
+        <view class="lef">{{item.name}}：</view>
+        <view class="rig">{{item.value}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='btn' catchtap='goshop'>查看商品</view>
+</view>

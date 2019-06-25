@@ -1,0 +1,11 @@
+<view class="navbar">
+    <view class='navBarWrap'>
+      <view class="navbar-item" scroll-x style="width: 100%" wx:for="{{navbar}}" wx:key="{{idx}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+        <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}">{{item}}</text>
+      </view>
+    </view>
+    <view class='back'>
+      <text class="iconfont icon-sousuo"></text>
+    </view>
+  </view>
+  <slot></slot>

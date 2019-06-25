@@ -1,0 +1,72 @@
+<view class="container">
+  <sw-iper></sw-iper>
+  <view class="conWrap">
+    <view class="tex">产区名称</view>
+    <view class="text">产区类型　　一级产区-二级产区</view>
+    <view class="text">主要产出　　红茶、绿茶、黑茶</view>
+    <view class="text">代表企业　　20家</view>
+    <view class="text">相关茶品牌　　6种</view>
+    <view class="text">相关商品　　6种</view>
+  </view>
+  <view class="navbar">
+    <view class="navbar-item" wx:for="{{navbar}}" wx:key="{{idx}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+      <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}">{{item}}</text>
+    </view>
+  </view>
+
+  <!--产品介绍  -->
+  <view class="product" wx:if="{{productHidden}}">
+    <image src="./../../images/u40.png" mode='scaleToFill'></image>
+  </view>
+
+  <!--代表企业  -->
+  <view class="enterprise" wx:if="{{enterpriseHidden}}">
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">不二茶业</view>
+          <view class="span">主要产出：红茶、绿茶、黑茶</view>
+          <view class="span">拥有茶品牌：{{item.con}}种</view>
+          <view class="span">相关品牌：{{item.con}}种</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 相关茶品牌 -->
+  <view class="teoRelevant" wx:if="{{teoRelevantHidden}}">
+    <view class="teoList" wx:for="{{teoList}}" wx:key="{{idx}}" wx-data="{{idx}}">
+      <view class="teowrap">
+        <view class="left">
+          <image src='./../../images/u40.png'></image>
+        </view>
+        <view class="right">
+          <view class="h3">小黑茶</view>
+          <view class="span">所属企业：宋缘茶业</view>
+          <view class="span">相关商品：{{item.con}}种</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--相关商品  -->
+  <view class="relevantShop" wx:if="{{relevanShopHidden}}">
+    <view class="conBoxWrap">
+      <view class="conBox" wx:for="{{classList}}" wx:key="{{idx}}" catchtap="goConbox">
+        <view class="imgs">
+          <image src="{{item.img}}" mode='scaleToFill'></image>
+        </view>
+        <view class="txt">
+          {{item.title}}
+        </view>
+        <view class="price">
+          ￥{{item.price}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
